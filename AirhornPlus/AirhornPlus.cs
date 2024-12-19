@@ -11,15 +11,13 @@ namespace AirhornPlus
 	[BepInDependency(LethalLib.Plugin.ModGUID)]
 	public class AirhornPlus : BaseUnityPlugin
 	{
-		public static Harmony? Harmony { get; protected set; }
 		public static List<AssetBundle> Bundles = [];
+		public static Harmony? Harmony { get; protected set; }
 
 		protected void Awake()
 		{
 			Patch();
 			PatchNetcode();
-
-			// AddBundle("bundle");
 
 			if (Bundles.Count == 0)
 			{
