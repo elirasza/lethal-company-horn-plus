@@ -5,11 +5,11 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 
-namespace Example
+namespace AirhornPlus
 {
 	[BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 	[BepInDependency(LethalLib.Plugin.ModGUID)]
-	public class Example : BaseUnityPlugin
+	public class AirhornPlus : BaseUnityPlugin
 	{
 		public static Harmony? Harmony { get; protected set; }
 		public static List<AssetBundle> Bundles = [];
